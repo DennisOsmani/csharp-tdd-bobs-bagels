@@ -35,5 +35,20 @@ public class Tests
         Assert.That(expected == result);
     }
 
-    
+    [TestCase("Cheese Bagel", "Ham Bagel")]
+    public void RemoveBagelTest(string bagel1, string bagel2)
+    {
+        Basket basket = new Basket();
+
+        basket.addBagel(bagel1);
+
+        string expected1 = $"{bagel1} removed";
+        string expected2 = $"There is no {bagel1} in the basket";
+
+        string result1 = basket.removeBagel(bagel1);
+        string result2 = basket.removeBagel(bagel2);
+
+        Assert.That(expected1 == result1);
+        Assert.That(expected2 == result2);
+    }
 }

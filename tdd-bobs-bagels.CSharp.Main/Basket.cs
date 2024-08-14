@@ -25,6 +25,9 @@ namespace tdd_bobs_bagels.CSharp.Main
             return !basketIsFull;
         }
 
-
+        public string removeBagel(string bagel1)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

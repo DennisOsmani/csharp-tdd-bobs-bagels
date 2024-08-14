@@ -34,7 +34,7 @@ Everthing in the same table, starting from task 1. :
 | `Basket`		  | `AddBagel(string bagel)`					| User order bagel and adds to basket                | bool    |
 |                 |                                             |								                     |         |
 |-----------------|---------------------------------------------|----------------------------------------------------|---------|
-|                 | `RemoveBagel(string bagel)`                 | User can remove bagel from basket					 | string  |
+|                 | `RemoveBagel(string bagel)`                 | User can remove bagel from basket					 | bool    |
 |                 |                                             | No bagel found to remove							 | string  |
 |-----------------|---------------------------------------------|----------------------------------------------------|---------|
 |                 | `public bool basketIsFull`                  | Property to check if basket is full				 | bool    |
