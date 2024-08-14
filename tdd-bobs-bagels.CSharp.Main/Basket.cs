@@ -39,7 +39,7 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public void changeBasketCapacity(int capacity)
         {
-            throw new NotImplementedException();
+            maxBasketSize = capacity;
         }
     }
 }
