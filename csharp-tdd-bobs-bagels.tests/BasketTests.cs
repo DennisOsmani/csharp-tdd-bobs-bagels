@@ -1,4 +1,6 @@
+using tdd_bobs_bagels.CSharp.Main;
 namespace csharp_tdd_bobs_bagels.tests;
+
 
 public class Tests
 {
