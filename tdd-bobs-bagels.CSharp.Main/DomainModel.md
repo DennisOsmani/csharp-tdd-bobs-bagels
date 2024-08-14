@@ -31,7 +31,7 @@ Everthing in the same table, starting from task 1. :
 
 | Classes         | Methods                                     | Scenario											 | Outputs |
 |-----------------|---------------------------------------------|----------------------------------------------------|---------|
-| `Basket`		  | `AddBagel(string bagel)`					| User order bagel and adds to basket                | String  |
+| `Basket`		  | `AddBagel(string bagel)`					| User order bagel and adds to basket                | bool    |
 |                 |                                             |								                     |         |
 |-----------------|---------------------------------------------|----------------------------------------------------|---------|
 |                 | `RemoveBagel(string bagel)`                 | User can remove bagel from basket					 | string  |

@@ -10,8 +10,14 @@ public class Tests
     }
 
     [Test]
-    public void Test1()
+    public void AddBagelTest()
     {
-        Assert.Pass();
+        Basket basket = new Basket();
+        string item = "Cheese bagel";
+        bool expected = true;
+
+        bool result = basket.addBagel(item);
+
+        Assert.That(expected == result);
     }
 }
