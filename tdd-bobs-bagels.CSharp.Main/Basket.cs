@@ -27,7 +27,14 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public string removeBagel(string bagel1)
         {
-            throw new NotImplementedException();
+            if (!_basket.Contains(bagel1))
+            {
+                return $"There is no {bagel1} in the basket";
+            }
+
+            _basket.Remove(bagel1);
+            return $"{bagel1} removed";
+            
         }
     }
 }
