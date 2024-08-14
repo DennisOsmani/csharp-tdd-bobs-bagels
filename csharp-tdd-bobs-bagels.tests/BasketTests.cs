@@ -9,14 +9,13 @@ public class Tests
     {
     }
 
-    [Test]
-    public void AddBagelTest()
+    [TestCase("Cheese Bagel")]
+    public void AddBagelTest(string bagel)
     {
         Basket basket = new Basket();
-        string item = "Cheese bagel";
         bool expected = true;
 
-        bool result = basket.addBagel(item);
+        bool result = basket.addBagel(bagel);
 
         Assert.That(expected == result);
     }

@@ -9,14 +9,20 @@ namespace tdd_bobs_bagels.CSharp.Main
     public class Basket
     {
 
-        private List<string> basket = new List<string>();
+        private List<string> _basket = new List<string>();
 
         public bool basketIsFull = false;
         public int maxBasketSize { get; set; } = 3;
 
-        public bool addBagel(string item)
+        public bool addBagel(string bagel)
         {
-            throw new NotImplementedException();
+            if (_basket.Count() >= maxBasketSize)
+            {
+                return basketIsFull;
+            }
+
+            _basket.Add(bagel);
+            return !basketIsFull;
         }
     }
 }
