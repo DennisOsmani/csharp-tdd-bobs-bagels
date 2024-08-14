@@ -51,4 +51,16 @@ public class Tests
         Assert.That(expected1 == result1);
         Assert.That(expected2 == result2);
     }
+
+    [TestCase(4)]
+    public void ChangeBasketCapacityTest(int capacity)
+    {
+        Basket basket = new Basket();
+
+        int expected = 4;
+
+        basket.changeBasketCapacity(capacity);
+
+        Assert.That(expected == basket.maxBasketSize);
+    }
 }

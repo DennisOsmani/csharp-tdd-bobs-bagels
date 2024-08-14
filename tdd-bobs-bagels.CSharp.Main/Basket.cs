@@ -36,5 +36,10 @@ namespace tdd_bobs_bagels.CSharp.Main
             return $"{bagel1} removed";
             
         }
+
+        public void changeBasketCapacity(int capacity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
